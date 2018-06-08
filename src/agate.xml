@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<extension version="2.6" type="plugin" group="vmpayment" method="upgrade">
+    <name>VM Payment - Agate</name>
+    <creationDate>July 27 2012</creationDate>
+    <author>Agate</author>
+    <authorUrl>http://www.agate.services</authorUrl>
+    <copyright>Copyright</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.0.0</version>
+    <description>Agate payment plugin</description>
+    <files>
+        <filename plugin="agate">agate.php</filename>
+        <folder>language</folder>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+        <param name="merchant_apikey" type="text"  label="VMPAYMENT_AGATE_API_KEY_LABEL" description="VMPAYMENT_AGATE_API_KEY_LABEL" />
+    </params>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                    <field name="merchant_apikey" type="text" label="VMPAYMENT_AGATE_API_KEY_LABEL" description="VMPAYMENT_AGATE_API_KEY_LABEL"/>
+                    <field name="payment_logos" type="vmfiles"  multiple="true" label="VMPAYMENT_AGATE_LOGO"
+                      description="VMPAYMENT_AGATE_LOGO"
+                      directory="/images/stories/virtuemart/payment"
+                      default="default" hide_default="1" hide_none="1"
+                      stripext="0" exclude="^_"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
