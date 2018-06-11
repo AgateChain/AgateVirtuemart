@@ -18,3 +18,8 @@ The Joomla Extension Manager expects a zip file for installation. The contents o
 6. Get your api key of your merchant account from Agate.
 7. Select the configuration tab for the payment method that you just created, and enter your API Key from step 6.
 8. Click save and close.
+
+Try How It Works ?
+====================
+
+We have created a demo website for you to test the plugin, feel free to visit [here](http://www.myjoomla.agate.services/) .
