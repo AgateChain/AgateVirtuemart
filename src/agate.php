@@ -502,7 +502,7 @@ class plgVmPaymentAgate extends vmPSPlugin
         // agatelog(print_r( $order, true ));
 
         $redirect_url   = (JROUTE::_ (JURI::root () . 'index.php?option=com_virtuemart&view=pluginresponse&task=pluginresponsereceived&on=' . $order['details']['BT']->order_number . '&pm=' . $order['details']['BT']->virtuemart_paymentmethod_id . '&Itemid=' . JRequest::getInt ('Itemid')));
-        $order_total    = $order['details']['BT']->order_total;
+        $order_total    = number_format((float)$order['details']['BT']->order_total, 2, '.', '');
         $baseUri        = "http://gateway.agate.services/" ;
         $convertUrl     = "http://gateway.agate.services/convert/";
         $api_key        = $method->merchant_apikey;
