@@ -22,4 +22,4 @@ The Joomla Extension Manager expects a zip file for installation. The contents o
 Try How It Works ?
 ====================
 
-We have created a demo website for you to test the plugin, feel free to visit [here](http://www.myjoomla.agate.services/) .
+We have created a demo website for you to test the plugin, feel free to visit [here](http://myjoomla.agate.services/) .
